@@ -268,7 +268,7 @@ if (! function_exists('elixir')) {
     function elixir($file)
     {
         if (App::environment('local')) {
-            return $file;
+            return '/'.$file;
         }
 
         static $manifest = null;
